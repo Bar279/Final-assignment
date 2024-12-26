@@ -1,0 +1,294 @@
+/* General Container Styling */
+.container {
+    width: 100vw; /* makes sure that the "container" div is stretched to the left and right edges of our web browser */
+   height: auto;
+}
+
+/* Section Styling */
+section {
+    position: relative; /* Allows for absolute positioning within each section */
+}
+
+/* Individual Hotel Containers */
+.Hilton, .contain_2, .contain_3 {
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+
+
+/* Hilton Styles */
+
+.contain_1{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    margin-top: 40px;
+    padding: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    display: flex; /* Flexbox to align items horizontally */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: space-between; /* Space between containers */
+    gap: 20px; /* Adds space between sections */
+    padding: 20px; /* Optional: Adds some padding around the containers */
+    box-sizing: border-box;
+
+
+}
+
+
+
+h1 {
+   font-size: 2em;
+    color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* translateX only moves the object horizontally */
+    top: -10px;
+}
+
+/* For Subheaders */
+h2 {
+    font-size: 2em;
+    color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* translateX only moves the object horizontally */
+    top: 600px;
+}
+
+/* For Captions */
+h4 {
+    font-size: 1em;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+}
+
+
+.Hilton img {
+    width: 90%; /* Image takes up the full width of the container */
+    height: 400px; /* Maintain the aspect ratio */
+    display: block; 
+    position: absolute;
+    left:2%;
+    top: 20px
+
+
+}
+
+ .contain_2 {
+ width: 100%;
+ height: 560px;
+ position: absolute;
+ left:150%;
+ top:-10px;
+ margin: 10px;
+ padding: 10px;
+ box-sizing: border-box;
+ z-index: 1;
+ }
+  .contain_2 img {
+    width: 90%;
+    height: 400px;
+    display: block;
+    position: absolute;
+}
+
+
+
+
+.txt_1 {
+    width: 420;
+    font-size: 1em;
+    font-family: AdobeVF;
+    text-align: center;
+    letter-spacing: 2px;
+    color: black;
+    margin-top: 20px;
+    position: relative;
+    left: 2px;
+    top:420px;
+    z-index: 1;
+}
+
+/* Le Méridien Styles */
+
+
+
+.meridien img {
+    width: 30%; /* Image takes up the full width of the container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; 
+    position: relative;
+    left:2%;
+    top: 20px
+
+}
+
+
+
+
+.txt_2 {
+    font-size: 1em;
+    font-family: AdobeVF;
+    text-align: center;
+    letter-spacing: 2px;
+    color: black;
+    margin-top: 435px;
+    position: relative;
+}
+
+
+
+.Book{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00bfff;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 5px;
+    position: relative;
+    left:45%;
+    top:30px;
+
+    margin-bottom: -30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+
+}
+
+.Book:hover {
+    background-color: blueviolet;
+}
+/* Marriott Styles */
+.contain_3 {
+    width: 100vw; /* Ensures container spans the full width */
+    height: auto;
+    margin-top: 700px;
+    padding: 0; /* No padding around the image */
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.contain_3 img {
+    width: 100vw; 
+    height: 300px; 
+    object-fit: cover; 
+    display: block; 
+}
+
+.txt_3 {
+    font-size: 1em;
+    font-family: AdobeVF;
+    text-align: center;
+    letter-spacing: 2px;
+    color: black;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+
+
+/* Navigation Bar */
+.navigation {
+    width: 100vw;
+    height: 40px;
+    background: aliceblue;
+    position: relative; /* keeps the navigation bar on top of content */
+    z-index: 1; /* ensures navigation is always on top */
+    padding: 10px 0;
+}
+
+ul {
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.3em;
+}
+
+li {
+    float: right;
+    margin-left: 20px;
+}
+
+a {
+    color: purple;
+    text-decoration: none;
+}
+
+li:last-child {
+    float: left;
+    margin-left: 0px;
+    padding: 0;
+}
+
+/* Footer */
+
+
+
+.footer {
+    width: 100%;
+    height: 500px;
+    background: gray;
+    position: relative;
+    top: 1000px;
+}
+
+.footer_list {
+    position: absolute;
+    left: 400px;
+    top: 270px;
+}
+
+.footer_list2 {
+    position: absolute;
+    left: 700px;
+    top: 300px;
+}
+
+.footer_list3 {
+    position: absolute;
+    left: 1000px;
+    top: 300px;
+}
+
+.footer_list li { /* Do Not Touch */
+    float: none;
+}
+
+.footer_list2 li {
+    float: none;
+}
+
+.footer_list3 li {
+    float: none;
+}
+
+
+.footer_list li a {
+    color: white;
+}
+
+.footer_list2 li a {
+    color: white;
+}
+
+.footer_list3 li a {
+    color: white;
+}
+
+
+
+
+
+
